@@ -1,0 +1,39 @@
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectDiv {
+    color: rgb(19,19,19);
+    background-color:rgb(255, 248, 239);
+    margin-bottom: 15px;
+    padding: 30px 10%;
+}
+
+.projectDiv h2 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    width: fit-content;
+}
+
+.projectInfo {
+    width: 33%;
+}
+
+.line {
+    border-bottom: 1px solid rgb(18, 18, 18);
+    width: 100%;
+    min-width: 300px;
+}
+
+.projectDiv a {
+    text-decoration: none;
+    width: fit-content;
+}
+
+.projectDiv a:link {color: rgb(19,19,19);}
+.projectDiv a:visited {color: rgb(19,19,19);}
+.projectDiv a:hover {color: rgb(0, 115, 203);}
+.projectDiv a:active {color: rgb(0, 68, 150);}

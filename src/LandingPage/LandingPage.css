@@ -1,0 +1,57 @@
+.landingPage {
+    text-align: center;
+    height: 100%;
+}
+
+.pathButtons {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+}
+
+.musicPath, .webDevPath {
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    outline: none;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.musicPath {
+    background: rgb(0, 0, 0);
+    color: antiquewhite;
+}
+.musicPath:hover {
+    background: rgb(255, 248, 59);
+    color: rgb(32, 105, 145);
+}
+.musicPath:active {
+    background: rgb(245, 183, 25);
+    color: rgb(57, 164, 196);
+}
+
+.webDevPath {
+    background: rgb(0, 0, 0);
+    color: antiquewhite;
+}
+.webDevPath:hover {
+    background: rgb(65, 184, 220);
+    color: rgb(245, 183, 25);
+}
+.webDevPath:active {
+    background: rgb(32, 105, 145);
+    color: rgb(255, 248, 59);
+}
+
+@media screen and (max-width: 750px) {
+    .pathButtons {
+        flex-direction: column;
+    }
+}

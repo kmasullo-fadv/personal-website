@@ -1,3 +1,8 @@
+html {
+  height: 100%;
+  width: 100%;
+  /*position: relative;*/
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  background:
+    linear-gradient(
+      30deg,
+      rgb(16, 16, 16),
+      rgb(19, 19, 19),
+      rgb(24, 24, 24),
+      rgb(14, 14, 14)
+    );
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* .parallax {
+  content: "";
+  background: url('./code.png');
+  height: 100%;
+  position: absolute;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 15%;
+} */

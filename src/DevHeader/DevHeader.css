@@ -1,0 +1,88 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: auto;
+}
+
+.devH1 {
+    margin: auto;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border: 5px solid antiquewhite;
+    width: 300px;
+    animation-name: flicker;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flicker {
+    1% {background: rgb(18, 18, 18);}
+    20% {background: rgb(36, 36, 36); box-shadow: 1px 1px 20px 7px rgb(52, 52, 52)}
+    40% {background: rgb(18, 18, 18); box-shadow: none;}
+    80% {background: rgb(18, 18, 18); box-shadow: none;}
+    85% {background: rgb(63, 54, 0); box-shadow: 1px 1px 20px 3px rgb(79, 79, 79)}
+    90% {background: rgb(45, 38, 0); box-shadow: 1px 1px 10px 3px rgb(40, 40, 40)}
+    92% {background: rgb(18, 18, 18); box-shadow: none;}
+    95% {background: rgb(87, 74, 0); box-shadow: 1px 1px 15px 3px rgb(70, 70, 70)}
+    98% {background: rgb(0, 51, 79); box-shadow: 1px 1px 8px 3px rgb(50, 50, 50)}
+    99% {background: rgb(18, 18, 18); box-shadow: none;}
+}
+
+.devH1:hover {
+    border: 5px solid rgb(232, 226, 54);
+    background: rgb(232, 226, 54);
+    color: rgb(29, 93, 128);
+    animation: none;
+}
+
+.devLink {
+    text-decoration: none;
+}
+
+nav a:link {
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 25px;
+    padding: 10px;
+    height: fit-content;
+    width: 150px;
+    border-bottom: 1px solid white;
+}
+
+nav a:hover {
+    background: rgb(232, 226, 54);
+    color: rgb(40, 130, 179);
+    font-weight: bold;
+    border-bottom: 1px solid rgb(232, 226, 54);
+}
+
+@media screen and (max-width: 825px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        margin-top: 20px;
+    }
+    nav a:link {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .devH1 {
+        width: 95%;
+    }
+}
