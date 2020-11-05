@@ -65,6 +65,16 @@ export default class DevPortfolio extends Component {
                         <p>
                             Music Production Environment: Pro Tools.
                         </p>
+                        <h3>Gameplay Theme:</h3>
+                        <audio controls>
+                            <source src={`${process.env.PUBLIC_URL}/mp3/game.mp3`} type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio>
+                        <h3>Menu Theme:</h3>
+                        <audio controls>
+                            <source src={`${process.env.PUBLIC_URL}/mp3/menu.mp3`} type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio>
                     </div>
                     <div className="projectImages">
                         <img src={this.sbImgs[this.state.sbImg]} alt="space-battleship-screenshot" className="projectImage"/>
