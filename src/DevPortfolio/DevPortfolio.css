@@ -6,8 +6,11 @@
 .projectDiv {
     color: rgb(19,19,19);
     background-color:rgb(255, 248, 239);
-    margin-bottom: 15px;
-    padding: 30px 10%;
+    margin-bottom: 5px;
+    padding: 50px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .projectDiv h2 {
@@ -20,12 +23,12 @@
 
 .projectInfo {
     width: 33%;
+    margin-right: 30px;
 }
 
 .line {
     border-bottom: 1px solid rgb(18, 18, 18);
     width: 100%;
-    min-width: 300px;
 }
 
 .projectDiv a {
@@ -37,3 +40,36 @@
 .projectDiv a:visited {color: rgb(19,19,19);}
 .projectDiv a:hover {color: rgb(0, 115, 203);}
 .projectDiv a:active {color: rgb(0, 68, 150);}
+
+
+.projectImages {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 66%;
+}
+.projectImage {
+    margin: auto auto 0 auto;
+    width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    background-color: rgb(50, 50, 50);
+    width: 50%;
+    padding: 10px;
+    color: rgb(255, 248, 59);
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+    outline: none;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgb(255, 248, 59);
+    color: rgb(32, 105, 145);
+  }
+
+  .slideButtons {
+      margin-top: 0;
+  }

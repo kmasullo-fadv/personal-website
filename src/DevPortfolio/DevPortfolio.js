@@ -1,8 +1,48 @@
 import React, { Component } from "react";
+import sb0 from '../img/sbWelcome.png'
+import sb1  from '../img/sbDashboard.png'
+import sb2 from '../img/sbGameplay.png'
+import sb3 from '../img/sbMenu.png'
+import sb4 from '../img/sbVictory.png'
+import ct0 from '../img/ctMain.png'
+import ct1 from '../img/ctProject.png'
+import ct2 from '../img/ctChord.png'
+import ct3 from '../img/ctPlay.png'
 import './DevPortfolio.css'
 
 export default class DevPortfolio extends Component {
+    state = {
+        sbImg: 0,
+        ctImg: 0,
+    };
 
+    sbImgs = [sb0, sb1, sb2, sb3, sb4];
+    ctImgs = [ct0, ct1, ct2, ct3];
+
+    prevSb = () => {
+        this.state.sbImg === 0
+        ? this.setState({sbImg: 4})
+        : this.setState({sbImg: this.state.sbImg -1})
+    }
+    
+    nextSb = () => {
+        this.state.sbImg === 4
+        ? this.setState({sbImg: 0})
+        : this.setState({sbImg: this.state.sbImg +1})
+    }
+
+    prevCt = () => {
+        this.state.ctImg === 0
+        ? this.setState({ctImg: 3})
+        : this.setState({ctImg: this.state.ctImg -1})
+    }
+    
+    nextCt = () => {
+        this.state.ctImg === 3
+        ? this.setState({ctImg: 0})
+        : this.setState({ctImg: this.state.ctImg +1})
+    }
+    
     render() {
         return (
             <div className="projectsContainer">
@@ -27,7 +67,11 @@ export default class DevPortfolio extends Component {
                         </p>
                     </div>
                     <div className="projectImages">
-
+                        <img src={this.sbImgs[this.state.sbImg]} alt="space-battleship-screenshot" className="projectImage"/>
+                        <div className="slideButtons">
+                            <button type="button" className="prev sb" onClick={this.prevSb}>&#10094;</button>
+                            <button type="button" className="next sb" onClick={this.nextSb}>&#10095;</button>
+                        </div>
                     </div>
                 </div>
                 <div className="projectDiv">
@@ -49,7 +93,11 @@ export default class DevPortfolio extends Component {
                         </p>
                     </div>
                     <div className="projectImages">
-
+                        <img src={this.ctImgs[this.state.ctImg]} alt="chordtester-screenshot" className="projectImage"/>
+                        <div className="slideButtons">
+                            <button type="button" className="prev" onClick={this.prevCt}>&#10094;</button>
+                            <button type="button" className="next" onClick={this.nextCt}>&#10095;</button>
+                        </div>
                     </div>
                 </div>
             </div>
