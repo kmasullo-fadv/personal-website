@@ -81,8 +81,9 @@ nav a:hover {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 510px) {
     .devH1 {
-        width: 95%;
+        width: auto;
+        padding: 0 10%;
     }
 }

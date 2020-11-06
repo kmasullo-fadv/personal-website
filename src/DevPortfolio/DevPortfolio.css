@@ -47,6 +47,7 @@
     flex-direction: column;
     margin: auto;
     width: 66%;
+    box-shadow: 1px 1px 20px 1px rgb(19,19,19);
 }
 .projectImage {
     margin: auto auto 0 auto;
@@ -72,4 +73,22 @@
 
   .slideButtons {
       margin-top: 0;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .projectDiv {
+        flex-direction: column;
+    }
+    .projectInfo,
+    .projectImages {
+        width: 95%;
+        margin: auto;
+    }
+    .projectImages {
+        margin-top: 30px;
+    }
   }

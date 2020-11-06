@@ -35,10 +35,11 @@
 }
 
 .homeDiv h2 {
-    font-size: 70px;
+    font-size: 40px;
     margin: 0;
     padding: 0;
     font-weight: normal;
+    width: fit-content;
 }
 
 .line {
@@ -46,9 +47,10 @@
 }
 
 .homeDiv p {
-    font-size: 35px;
+    font-size: 20px;
     margin: 0;
     font-weight: lighter;
+    letter-spacing: 2px;
 }
 
 .faceImageL {
@@ -61,6 +63,14 @@
     display: none;
 }
 
+.social a{
+    margin-left: 10px;
+}
+
+.social a:visited {
+    color: black;
+}
+
 @media screen and (max-width: 825px) {
     .leftRightContainer {
         flex-direction: column;
@@ -69,21 +79,20 @@
         width: 100%;
     }
     .rightContainer {
-        width: 100%;
-        margin-top: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .faceImageR {
-        height: auto;
-        width: 25%;
-        margin: auto 20px 0 0;
-        opacity: 90%;
-        display: block;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
     }
     .faceImageL {
         display: none;
+    }
+    .faceImageB {
+        height: auto;
+        width: 40%;
+        margin: auto;
+        margin-top: 20px;
+        opacity: 90%;
+        display: block;
     }
 }
 

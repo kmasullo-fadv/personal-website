@@ -2,11 +2,19 @@ import React, {Component} from "react";
 import "./Contact.css"
 
 export default class Contact extends Component {
+    state = {
+        isSubmitted: false
+    }
 
-    render() {
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.setState({isSubmitted: true})
+    }
+
+    renderForm = () => {
         return (
             <div className="contact">
-                <form action="https://formspree.io/xvowbnak" method="post">
+                <form action="https://formspree.io/xvowbnak" method="post" onSubmit={this.handleSubmit}>
                     <label htmlFor="user-name">Name:</label><br/>
                     <input id="user-name" type="text" name="name" required /><br/>
 
@@ -18,6 +26,21 @@ export default class Contact extends Component {
                     <button type="submit">Submit</button>
                 </form>
             </div>
+        )
+    }
+
+    renderThanks = () => {
+        return (
+            <h2>Thank you! I'll be in touch soon.</h2>
+        )
+    }
+
+
+    render() {
+        return (
+            <>
+            {this.state.isSubmitted ? this.renderThanks() : this.renderForm()}
+            </>
         )
     }
 }
