@@ -12,7 +12,7 @@ export default class DevHome extends Component {
             <div className="homeDiv">
                 <div className="leftRightContainer">
                     <div className="leftContainer">
-                        <h2 className="slideRight">Welcome</h2>
+                        <h2>Welcome</h2>
                         <div className="line" />
                         <img src={face} alt="kameronmasullo" className="faceImageL"/>
                     </div>
