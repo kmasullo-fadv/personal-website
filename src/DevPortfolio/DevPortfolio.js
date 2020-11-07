@@ -8,6 +8,8 @@ import ct0 from '../img/ctMain.png'
 import ct1 from '../img/ctProject.png'
 import ct2 from '../img/ctChord.png'
 import ct3 from '../img/ctPlay.png'
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './DevPortfolio.css'
 
 export default class DevPortfolio extends Component {
@@ -75,6 +77,7 @@ export default class DevPortfolio extends Component {
                             <source src={`${process.env.PUBLIC_URL}/mp3/menu.mp3`} type="audio/mpeg" />
                             Your browser does not support the audio element.
                         </audio>
+                        <a href="https://github.com/mloldacre/battleship-jmkbh" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
                     </div>
                     <div className="projectImages">
                         <img src={this.sbImgs[this.state.sbImg]} alt="space-battleship-screenshot" className="projectImage"/>
@@ -101,6 +104,7 @@ export default class DevPortfolio extends Component {
                         <p>
                             Development Environment: Tone.js, React, Node, Express, PostgreSQL, Knex.
                         </p>
+                        <a href="https://github.com/kmasullo/chordtester-frontend" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
                     </div>
                     <div className="projectImages">
                         <img src={this.ctImgs[this.state.ctImg]} alt="chordtester-screenshot" className="projectImage"/>
