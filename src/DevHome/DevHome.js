@@ -25,8 +25,8 @@ export default class DevHome extends Component {
                             <p>Outside of coding, I am a musician and mix engineer. It is my dream to join a team of developers creating software for musicians.</p><br/>
                         </div>
                         <div className="social">
-                            <a href="https://github.com/kmasullo"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
-                            <a href="https://www.linkedin.com/in/kameron-masullo/"><FontAwesomeIcon icon={ faLinkedin } size="2x"/></a>
+                            <a href="https://github.com/kmasullo" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
+                            <a href="https://www.linkedin.com/in/kameron-masullo/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faLinkedin } size="2x"/></a>
                         </div>
                         <img src={face} alt="kameronmasullo" className="faceImageB"/>
                     </div>
