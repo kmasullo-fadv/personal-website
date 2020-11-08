@@ -1,0 +1,49 @@
+.musHome {
+    min-height: 100%;
+    background: black;
+    padding: 15px 0;
+}
+
+.musBanner {
+    width: 100%;
+}
+
+.musHomeContent {
+    display: flex;
+    flex-direction: row;
+    background: rgb(237, 249, 255);
+    min-height: 600px;
+    width: 80%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 5% auto 0 auto;
+}
+
+.musHomeContent h2 {
+    margin: 0 auto;
+}
+
+.newsColumn {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: rgb(48, 48, 48);
+    color: white;
+}
+.newsColumn button{
+    height: 60px;
+    text-align: left;
+    background: rgb(28, 28, 28);
+    color: white;
+    border: none;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    outline: none;
+    padding: 10px;
+} 
+.newsColumn button:hover{background:rgb(255, 183, 0); color: black;}
+
+.newsContent {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
