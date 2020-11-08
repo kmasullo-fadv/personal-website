@@ -15,6 +15,8 @@ export default class Contact extends Component {
         return (
             <div className="contact">
                 <form action="https://formspree.io/xvowbnak" method="post" onSubmit={this.handleSubmit}>
+                    <h2>Get in touch!</h2>
+                    <p>Leave a message here, and I will typically get back to you within a day.</p>
                     <label htmlFor="user-name">Name:</label><br/>
                     <input id="user-name" type="text" name="name" required /><br/>
 
@@ -24,6 +26,7 @@ export default class Contact extends Component {
                     <label htmlFor="user-message">Message:</label><br/>
                     <textarea id="user-message" name="message" required /><br/>
                     <button type="submit">Submit</button>
+                    <p>You may also feel free to email me at k@kameronmasullo.com</p>
                 </form>
             </div>
         )
