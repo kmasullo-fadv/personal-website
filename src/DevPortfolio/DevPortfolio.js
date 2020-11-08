@@ -99,7 +99,7 @@ export default class DevPortfolio extends Component {
                             to mind. It's also a great reference tool for students and teachers.
                         </p>
                         <p>
-                            This full stack app is a personal project, and I was responsible for all features. I also recorded all of the 
+                            This full-stack app is a personal project, and I was responsible for all of its features. I also recorded all of the 
                             audio samples heard during playback.
                         </p>
                         <p>
