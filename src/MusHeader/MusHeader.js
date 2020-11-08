@@ -10,7 +10,7 @@ export default class MusHome extends Component {
     render() {
         return (
             <div className="musHeader">
-                <img src={nameBanner} alt="Kameron Masullo" className="nameBanner"/>
+                <Link to="/" className="bannerLink"><img src={nameBanner} alt="Kameron Masullo" className="nameBanner" /></Link>
                 <nav>
                     <Link to="/music">Home</Link>
                     <Link to="/music/listen">Listen</Link>

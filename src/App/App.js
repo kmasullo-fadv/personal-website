@@ -4,8 +4,9 @@ import DevHeader from '../DevHeader/DevHeader';
 import DevHome from '../DevHome/DevHome.js'
 import LandingPage from '../LandingPage/LandingPage.js';
 import DevPortfolio from "../DevPortfolio/DevPortfolio.js";
-import MusHome from "../MusHome/MusHome"
 import MusHeader from "../MusHeader/MusHeader"
+import MusHome from "../MusHome/MusHome"
+import MusListen from "../MusListen/MusListen.js"
 import MusicPortfolio from "../MusicPortfolio/MusicPortfolio.js";
 //import NotFound from '../NotFound'
 import Contact from "../Contact/Contact";
@@ -43,6 +44,7 @@ export default class App extends Component {
           {/* <Route component={NotFound} path="/:AnythingWrong" /> */}
           <Route component={MusHeader} path="/music" />
           <Route component={MusHome} exact path="/music" />
+          <Route component={MusListen} exact path="/music/listen" />
         </div>
       </Context.Provider>
     );

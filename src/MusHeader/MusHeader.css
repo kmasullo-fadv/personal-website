@@ -8,6 +8,9 @@
     width: 55%;
     margin: 4% auto;
 }
+.bannerLink {
+    display: flex;
+}
 
 .musHeader nav {
     display: flex;
