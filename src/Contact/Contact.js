@@ -16,7 +16,7 @@ export default class Contact extends Component {
             <div className="contact">
                 <form action="https://formspree.io/xvowbnak" method="post" onSubmit={this.handleSubmit}>
                     <h2>Get in touch!</h2>
-                    <p>Leave a message here, and I will typically get back to you within a day.</p>
+                    <p>Leave a message here and I will typically get back to you within a day.</p>
                     <label htmlFor="user-name">Name:</label><br/>
                     <input id="user-name" type="text" name="name" required /><br/>
 
