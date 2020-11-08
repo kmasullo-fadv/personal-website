@@ -9,7 +9,7 @@
     text-align: center;
     margin: auto;
     height: fit-content;
-    padding: 30px 0;
+    padding: 0;
 }
 
 .leftRightContainer {
@@ -18,7 +18,7 @@
     justify-content: space-evenly;
     width: 80%;
     padding: 2%;
-    margin: 20px auto 0 auto;
+    margin: 5% auto;
     background: rgb(255, 252, 242);
     box-shadow: 5px 5px 15px 1px rgb(145, 145, 145);
 }
@@ -71,9 +71,10 @@
     margin-left: 10px;
 }
 
-.social a:visited {
-    color: black;
-}
+.social a:link {color: rgb(19,19,19);}
+.social a:visited {color: rgb(19,19,19);}
+.social a:hover {color: rgb(0, 115, 203);}
+.social a:active {color: rgb(0, 68, 150);}
 
 @media screen and (max-width: 825px) {
     .homeDiv h2 {
@@ -110,6 +111,10 @@
 }
 
 @media screen and (max-width: 625px) {
+    .leftRightContainer{
+        width: 90%;
+        margin-top: 5%;
+    }
     .rightContainer {
         flex-direction: column;
         text-align: center;

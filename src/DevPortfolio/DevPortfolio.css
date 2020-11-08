@@ -81,6 +81,10 @@
     width: 100%;
   }
 
+  .small {
+      font-size: 12px;
+  }
+
   @media screen and (max-width: 1100px) {
     .projectDiv {
         flex-direction: column;
@@ -99,5 +103,16 @@
     .line {
         margin: 0;
         min-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 510px) {
+    .projectsContainer {
+        width: 100%;
+    }
+
+    .projectDiv {
+        width: 90%;
+        padding: 5%;
     }
   }

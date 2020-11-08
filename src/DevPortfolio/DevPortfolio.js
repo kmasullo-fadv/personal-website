@@ -9,6 +9,7 @@ import ct1 from '../img/ctProject.png'
 import ct2 from '../img/ctChord.png'
 import ct3 from '../img/ctPlay.png'
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './DevPortfolio.css'
 
@@ -50,12 +51,12 @@ export default class DevPortfolio extends Component {
             <div className="projectsContainer">
                 <div className="projectDiv">
                     <div className="projectInfo">
-                        <h2><a href="https://spacebattleship.vercel.app/" target="_blank" rel="noopener noreferrer">Space Battleship</a></h2>
+                        <h2><a href="https://spacebattleship.vercel.app/" target="_blank" rel="noopener noreferrer">Space Battleship<FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></a></h2>
                         <div className="line"/>
                         <p>
                             Space Battleship is a space-themed battleship game that allows users to play against an AI (coming soon: 
                             play against another logged-in user). Users are encouraged to create an account so that their stats can 
-                            be saved and their high scores can be beat!
+                            be saved and their high scores can be beaten!
                         </p>
                         <p>
                             I collaborated with four other awesome developers on this project. I was the audio developer and 
@@ -89,12 +90,12 @@ export default class DevPortfolio extends Component {
                 </div>
                 <div className="projectDiv">
                     <div className="projectInfo">
-                        <h2><a href="https://chordtester.vercel.app/" target="_blank" rel="noopener noreferrer">ChordTester</a></h2>
+                        <h2><a href="https://chordtester.vercel.app/" target="_blank" rel="noopener noreferrer">ChordTester<FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></a></h2>
                         <div className="line"/>
                         <p>
-                            ChordTester is an interactive music app which allows users to click notes on a guitar and play back the chord.
-                            When logged-in, a user may save chords to project folders for future reference. This app is great for 
-                            musicians on-the-go who do not have access to their instrument, and want to take note of an idea that comes 
+                            ChordTester is an interactive music app that allows users to click notes on a guitar then hear the chord. 
+                            After signing up, a user may save chords to project folders for future reference. This app is great for 
+                            musicians on-the-go who do not have access to their instrument and want to take note of an idea that comes 
                             to mind. It's also a great reference tool for students and teachers.
                         </p>
                         <p>
