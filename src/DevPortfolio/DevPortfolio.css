@@ -5,7 +5,7 @@
 
 .projectDiv {
     color: rgb(19,19,19);
-    background-color:rgb(255, 248, 239);
+    background-color:rgb(255, 249, 235);
     margin-bottom: 5px;
     padding: 50px 10%;
     display: flex;
@@ -26,6 +26,7 @@
     padding: 2%;
     background: rgb(255, 252, 242);
     box-shadow: 5px 5px 15px 1px rgb(145, 145, 145);
+    border-radius: 1%;
 }
 
 .line {

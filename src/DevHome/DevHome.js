@@ -14,7 +14,7 @@ export default class DevHome extends Component {
                     <div className="leftContainer">
                         <h2>Welcome</h2>
                         <div className="line" />
-                        <img src={face} alt="kameronmasullo" className="faceImageL"/>
+                        <img src={face} alt="kameronmasullo" className="faceImage"/>
                     </div>
                     <div className="rightContainer">
                         <div>
@@ -28,7 +28,6 @@ export default class DevHome extends Component {
                             <a href="https://github.com/kmasullo" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
                             <a href="https://www.linkedin.com/in/kameron-masullo/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faLinkedin } size="2x"/></a>
                         </div>
-                        <img src={face} alt="kameronmasullo" className="faceImageB"/>
                     </div>
                 </div>
             </div>

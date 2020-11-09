@@ -12,16 +12,6 @@ export default class DevHeader extends Component {
         },
     }
 
-    // return(
-    //     <header>
-    //         <Link to="/"><h1>Kameron Masullo</h1></Link>
-    //         <nav>
-    //             <Link to="/musicportfolio">Portfolio</Link>
-    //         </nav>
-    //     </header>
-    // )
-
-
     render() {
         return (
         <header>
