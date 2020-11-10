@@ -1,10 +1,18 @@
 import React, {Component} from 'react'
 import musBanner from "../img/musBanner.png"
+import {news} from '../NEWSSTORE'
 import "./MusHome.css"
 
 
 export default class MusHome extends Component {
+    state = {
+        currArticle: 0
+    }
 
+    handleArticle = (e) => {
+        e.preventDefault();
+        this.setState({currArticle: e.target.id})
+    }
 
     render() {
         return (
@@ -13,12 +21,10 @@ export default class MusHome extends Component {
                 <div className="musHomeContent">
                     <div className="newsColumn">
                         <h3>News</h3>
-                        <button>New Album Now Available</button>
-                        <button>Brand New Site! 11/8/2020</button>
+                        {news.articles.map((article, i) => {return <button id={i} key={`${article.title}${i}`} onClick={this.handleArticle}>{article.title}</button>})}
                     </div>
-                    <div className="newsContent">
-                        <h3>New Album Sundowning now available</h3>
-                        <p>Kameron Masullos' new album, Sundowning,, is now available for purchase or streaming on all platforms.</p>
+                    <div className="articleBox">
+                        {news.articles[this.state.currArticle].content}
                     </div>
                 </div>
             </div>

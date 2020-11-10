@@ -45,6 +45,7 @@ export default class App extends Component {
           <Route component={MusHeader} path="/music" />
           <Route component={MusHome} exact path="/music" />
           <Route component={MusListen} exact path="/music/listen" />
+          <Route component={Contact} exact path="/music/contact" />
         </div>
       </Context.Provider>
     );
