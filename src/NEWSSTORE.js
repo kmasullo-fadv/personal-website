@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom'
+import sdCover from './img/sdCover.jpg'
 
 const news = {
     articles: [
@@ -17,13 +18,15 @@ const news = {
                     </p>
                 </div>
         },
-        // {
-        //     title: "New Album Now Available",
-        //     content:
-        //         <div className="articleContent">
-        //             <p>Hello Hi</p>
-        //         </div>
-        // },
+        {
+            title: "New Album Now Available",
+            content:
+                <div className="articleContent">
+                    <h2>New Album Sundowning Now Available</h2>
+                    <p>Kameron Masullo's Sundowning melds genres in an exploration of addiction and recovery. Available now on your favorite streaming platform.</p>
+                    <img src={sdCover} alt="Sundowning by Kameron Masullo" className="articlePic"/>
+                </div>
+        },
         
     ]
 }

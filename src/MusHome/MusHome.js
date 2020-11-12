@@ -11,7 +11,8 @@ export default class MusHome extends Component {
 
     handleArticle = (e) => {
         e.preventDefault();
-        this.setState({currArticle: e.target.id})
+        this.setState({currArticle: parseInt(e.target.id)})
+
     }
 
     render() {
@@ -20,8 +21,10 @@ export default class MusHome extends Component {
                 <img src={musBanner} alt="Kameron Masullo Banner" className="musBanner"/>
                 <div className="musHomeContent">
                     <div className="newsColumn">
-                        <h3>News</h3>
-                        {news.articles.map((article, i) => {return <button id={i} key={`${article.title}${i}`} onClick={this.handleArticle}>{article.title}</button>})}
+                        <h3 className="newsH3">News</h3>
+                        {news.articles.map((article, i) => {
+                            return <button id={i} key={`${article.title}${i}`} onClick={this.handleArticle} className={i === this.state.currArticle ? 'selected' : 'black'}>{article.title}</button>
+                        })}
                     </div>
                     <div className="articleBox">
                         {news.articles[this.state.currArticle].content}
