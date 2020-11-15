@@ -8,6 +8,8 @@ import MusHeader from "../MusHeader/MusHeader"
 import MusHome from "../MusHome/MusHome"
 import MusListen from "../MusListen/MusListen.js"
 import MusicPortfolio from "../MusicPortfolio/MusicPortfolio.js";
+import Store from "../Store/Store.js";
+import MusContact from "../MusContact/MusContact.js"
 //import NotFound from '../NotFound'
 import Contact from "../Contact/Contact";
 import Context from '../Context'
@@ -46,6 +48,8 @@ export default class App extends Component {
           <Route component={MusHome} exact path="/music" />
           <Route component={MusListen} exact path="/music/listen" />
           <Route component={Contact} exact path="/music/contact" />
+          <Route component={Store} exact path="/music/store" />
+          <Route component={MusContact} exact path="/music/muscontact" />
         </div>
       </Context.Provider>
     );
