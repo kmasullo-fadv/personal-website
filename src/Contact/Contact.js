@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import "./Contact.css"
 
-export default class Contact extends Component {
+export default class DevContact extends Component {
     state = {
         isSubmitted: false
     }
@@ -13,7 +13,7 @@ export default class Contact extends Component {
 
     renderForm = () => {
         return (
-            <div className="contact">
+            <div className="devContact">
                 <form action="https://formspree.io/xvowbnak" method="post" onSubmit={this.handleSubmit}>
                     <h2>Get in touch!</h2>
                     <p>Leave a message here and I will typically get back to you within a day.</p>
