@@ -9,3 +9,6 @@
     color: antiquewhite;
 }
 
+a, button {
+    cursor: pointer;
+}
