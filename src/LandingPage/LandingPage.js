@@ -33,7 +33,7 @@ export default class LandingPage extends Component {
             <div className="landingPage">
                 <div className="pathButtons">
                     <button className="musicPath" onClick={this.musicClick}>Music</button>
-                    <button className="webDevPath" onClick={this.webDevClick}>Web Dev</button>
+                    <button className="webDevPath" onClick={this.webDevClick}>Dev</button>
                 </div>
             </div>
         )
