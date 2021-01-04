@@ -1,6 +1,4 @@
 import React, {Component } from 'react'
-//import Iframe from "react-iframe"
-//import album from './album';
 import albumStore from "./albumStore"
 import SongPLayer from './SongPLayer'
 import "./MusListen.css"
