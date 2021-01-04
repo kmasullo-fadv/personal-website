@@ -1,12 +1,111 @@
-.musListen {
-    min-height: 1000px;
-    height: fit-content;
-    background: rgb(29, 29, 29);
+.playerContainer {
+    background-color: rgb(18, 18, 18);
     display: flex;
+    height: 40%;
+    width: 90%;
+    max-width: 900px;
+    min-width: 280px;
+    max-height: 700px;
     flex-direction: column;
+    margin: 75px auto;
+    padding: 10px;
 }
-.player {
-    height: 100%;
+
+.playerBanner {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.playerBannerImg {
+    max-width: 200px;
+    flex: 4;
+}
+
+.playerBannerTitles {
+    flex: 5;
+    padding-left: 20px;
+    position: relative;
+}
+
+.albumName {
+    color: orange;
+    font-style: italic;
+}
+
+.playerBannerTitles audio {
+    width: 95%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.playerContainer h2 {
+    margin: 0;
+}
+
+.playerContainer h3 {
+    margin: 5px 0;
+}
+
+.tracks {
+    padding-top: 10px;
+    margin: auto;
     width: 100%;
-    padding: none;
+    height: 100%;
+    overflow: auto;
+}
+
+.songDiv {
+    border-top: 1px solid rgb(46, 46, 46);
+}
+
+.tracks button {
+    width: 100%;
+    height: 35px;
+    text-align: left;
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.tracks button:hover {
+    background: black;
+}
+
+.albumDiv {
+    width: 100%;
+    height: 100%;
+}
+
+
+.tracks::-webkit-scrollbar {
+    width: 5px;
+}
+.tracks::-webkit-scrollbar-track {
+background: none; 
+}
+.tracks::-webkit-scrollbar-thumb {
+background: #888; 
+}
+.tracks::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+
+@media screen and (max-width: 600px) {
+    .playerBanner {
+        flex-direction: column;
+    }
+
+    .playerBannerTitles {
+        padding-left: 0;
+        margin-top: 15px;
+    }
+
+    .playerBannerTitles audio {
+        margin-top: 15px;
+        position: relative;
+    }
 }
