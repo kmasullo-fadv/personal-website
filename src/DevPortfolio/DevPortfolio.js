@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SA from '../img/SA.gif'
 import SB from '../img/SB.gif'
 import CT from '../img/CT.gif'
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
@@ -10,6 +11,30 @@ export default class DevPortfolio extends Component {
     render() {
         return (
             <div className="projectsContainer">
+
+
+                <div className="projectDiv">
+                    <div className="projectInfo">
+                        <h2><a href="https://socraticaudio.com/" target="_blank" rel="noopener noreferrer">Socratic Audio<FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></a></h2>
+                        <div className="line"/>
+                        <p>
+                            Socratic Audio offers mixing and editing services to musicians, podcasters, recording engineers, etc. This simple website is straight and to-the-point, allowing 
+                            visitors to view a summary of services offered, hear samples, and request a quote.
+                        </p>
+                        <p>
+                            I developed this website personally for my business.
+                        </p>
+                        <p>
+                            Development Environment: React
+                        </p>
+                        <a href="https://github.com/mloldacre/battleship-jmkbh" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
+                    </div>
+                    <div className="projectImages">
+                        <img src={SA} alt="socratic-audio-screenshot" className="projectImage"/>
+                    </div>
+                </div>
+
+
                 <div className="projectDiv">
                     <div className="projectInfo">
                         <h2><a href="https://spacebattleship.vercel.app/" target="_blank" rel="noopener noreferrer">Space Battleship<FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></a></h2>
