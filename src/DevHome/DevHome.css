@@ -58,9 +58,6 @@
 .social a:active {color: rgb(0, 68, 150);}
 
 @media screen and (max-width: 1100px) {
-    .homeDiv h2 {
-        margin: auto;
-    }
     .leftRightContainer {
         flex-direction: column;
     }
@@ -72,13 +69,11 @@
         text-align: center;
         margin-top: 10px;
     }
-    .faceImage {
-        height: auto;
-        width: 40%;
-        margin: auto;
-        margin-top: 20px;
-        opacity: .90;
-        display: block;
+}
+
+@media screen and (max-width: 825px) {
+    .homeDiv h2 {
+        margin: 10px;
     }
 }
 
@@ -90,14 +85,6 @@
     .rightContainer {
         flex-direction: column;
         text-align: center;
-    }
-    .faceImageB {
-        height: auto;
-        width: 40%;
-        margin: auto;
-        margin-top: 20px;
-        opacity: .90;
-        display: block;
     }
 }
 

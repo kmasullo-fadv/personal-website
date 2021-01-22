@@ -83,6 +83,12 @@
     margin-top: 10%;
 }
 
+@media screen and (max-width: 825px) {
+    .musHome h2 {
+        margin: 10px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .musHomeContent {
         width: 100%;
