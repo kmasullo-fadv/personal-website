@@ -11,8 +11,6 @@ export default class DevPortfolio extends Component {
     render() {
         return (
             <div className="projectsContainer">
-
-
                 <div className="projectDiv">
                     <div className="projectInfo">
                         <h2><a href="https://socraticaudio.com/" target="_blank" rel="noopener noreferrer">Socratic Audio<FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></a></h2>
@@ -33,8 +31,6 @@ export default class DevPortfolio extends Component {
                         <img src={SA} alt="socratic-audio-screenshot" className="projectImage"/>
                     </div>
                 </div>
-
-
                 <div className="projectDiv">
                     <div className="projectInfo">
                         <h2><a href="https://spacebattleship.vercel.app/" target="_blank" rel="noopener noreferrer">Space Battleship<FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></a></h2>
