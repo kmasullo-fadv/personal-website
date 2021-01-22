@@ -13,7 +13,7 @@ export default class DevPortfolio extends Component {
             <div className="projectsContainer">
                 <div className="projectDiv">
                     <div className="projectInfo">
-                        <h2><a href="https://socraticaudio.com/" target="_blank" rel="noopener noreferrer">Socratic Audio<FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></a></h2>
+                        <h2><a href="https://socraticaudio.com/" target="_blank" rel="noopener noreferrer">Socratic Audio <FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></a></h2>
                         <div className="line"/>
                         <p>
                             Socratic Audio offers mixing and editing services to musicians, podcasters, recording engineers, etc. This simple website is straight and to-the-point, allowing 
@@ -33,7 +33,7 @@ export default class DevPortfolio extends Component {
                 </div>
                 <div className="projectDiv">
                     <div className="projectInfo">
-                        <h2><a href="https://spacebattleship.vercel.app/" target="_blank" rel="noopener noreferrer">Space Battleship<FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></a></h2>
+                        <h2><a href="https://spacebattleship.vercel.app/" target="_blank" rel="noopener noreferrer">Space Battleship <FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></a></h2>
                         <div className="line"/>
                         <p>
                             Space Battleship is a space-themed battleship game that allows users to play against an AI (coming soon: 
@@ -68,7 +68,7 @@ export default class DevPortfolio extends Component {
                 </div>
                 <div className="projectDiv">
                     <div className="projectInfo">
-                        <h2><a href="https://chordtester.vercel.app/" target="_blank" rel="noopener noreferrer">ChordTester<FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></a></h2>
+                        <h2><a href="https://chordtester.vercel.app/" target="_blank" rel="noopener noreferrer">ChordTester <FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></a></h2>
                         <div className="line"/>
                         <p>
                             ChordTester is an interactive music app that allows users to click notes on a guitar then hear the chord. 

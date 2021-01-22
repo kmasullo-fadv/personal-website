@@ -1,12 +1,12 @@
 .App {
-    color: antiquewhite;
+    color: rgb(244, 244, 244);
     min-height: 100%;
     min-width: 100%;
     margin: 0;
 }
 
 .App a {
-    color: antiquewhite;
+    color: rgb(244, 244, 244);
 }
 
 a, button {
@@ -82,17 +82,8 @@ nav {
     text-align: center;
 }
 
-.px65 {
-    font-size: 65px;
-}
 
-.px50 {
-    font-size: 50px;
-    font-weight: 300;
-}
-
-
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 1050px) {
     header {
         flex-direction: column;
     }
@@ -105,9 +96,9 @@ nav {
     }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 500px) {
     .headerH1 {
-        width: auto;
-        padding: 0 10%;
+        padding: 0;
+        font-size: 30px;
     }
 }

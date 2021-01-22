@@ -41,6 +41,7 @@ export default class App extends Component {
           <Route component={DevHome} exact path="/dev" />
           <Route component={LandingPage} exact path="/" />
           <Route component={DevPortfolio} exact path="/dev/portfolio"/>
+          <Route component={DevPortfolio} exact path="/dev"/>
           <Route component={MusicPortfolio} exact path="/music/portfolio" />
           <Route component={DevContact} exact path="/dev/contact" />
           {/* <Route component={NotFound} path="/:AnythingWrong" /> */}

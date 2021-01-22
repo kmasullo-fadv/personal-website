@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import face from "../img/facecircle.svg"
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./DevHome.css"
@@ -9,17 +8,14 @@ export default class DevHome extends Component {
     render() {
         return (
             <>
-            <div className="homeDiv">
+            <div className="homeDiv center">
                 <div className="welcomeBanner welcomeBannerDev">
                     <div className="welcomeBannerDiv">
                         <h2 className="px65">Welcome</h2>
-                        <h2 className="px50">I build web and mobile applications</h2>
+                        <h2 className="px50">I build JavaScript applications</h2>
                     </div>
                 </div>
                 <div className="leftRightContainer">
-                    {/* <div className="leftContainer">
-                        <img src={face} alt="kameronmasullo" className="faceImage"/>
-                    </div> */}
                     <h2>About Me:</h2>
                     <div className="rightContainer">
                         <div>

@@ -23,7 +23,7 @@ export default class MusHome extends Component {
                         <h2 className="px50">I am a musician, songwriter and session guitarist</h2>
                     </div>
                 </div>
-                <div className="musHomeContent">
+                <div className="musHomeContent center">
                     <div className="newsColumn">
                         <h3 className="newsH3">News</h3>
                         {news.articles.map((article, i) => {

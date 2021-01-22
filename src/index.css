@@ -12,29 +12,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100%;
   width: 100%;
-  background:
-    linear-gradient(
-      30deg,
-      rgb(16, 16, 16),
-      rgb(19, 19, 19),
-      rgb(24, 24, 24),
-      rgb(14, 14, 14)
-    );
+  background: rgb(19, 19, 19);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.px65 {
+  font-size: 65px;
 }
 
-/* .parallax {
-  content: "";
-  background: url('./code.png');
-  height: 100%;
-  position: absolute;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 15%;
-} */
+.px50 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.center {
+  text-align: center;
+}
