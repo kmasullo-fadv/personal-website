@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import musBanner from "../img/musBanner.png"
 import {news} from '../NEWSSTORE'
 import "./MusHome.css"
 
@@ -18,7 +17,12 @@ export default class MusHome extends Component {
     render() {
         return (
             <div className="musHome">
-                <img src={musBanner} alt="Kameron Masullo Banner" className="musBanner"/>
+                <div className="welcomeBanner welcomeBannerMusic">
+                    <div className="welcomeBannerDiv">
+                        <h2 className="px65">Welcome</h2>
+                        <h2 className="px50">I am a musician, songwriter and session guitarist</h2>
+                    </div>
+                </div>
                 <div className="musHomeContent">
                     <div className="newsColumn">
                         <h3 className="newsH3">News</h3>

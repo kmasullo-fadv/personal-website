@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
-import Context from '../Context'
-import './DevHeader.css'
+import {Link} from 'react-router-dom';
+import Context from '../Context';
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export default class DevHeader extends Component {
@@ -15,11 +16,12 @@ export default class DevHeader extends Component {
     render() {
         return (
         <header>
-            <Link to="/" className="devLink"><h1 className="devH1 hover">Kameron Masullo</h1></Link>
+            <Link to="/" className="headerLink"><h1 className="headerH1 hover">Kameron Masullo</h1></Link>
             <nav>
                 <Link to="/dev">Home</Link>
                 <Link to="/dev/portfolio">Portfolio</Link>
                 <Link to="/dev/contact">Contact</Link>
+                <Link to="/music">Music <FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></Link>
             </nav>
         </header>
         );

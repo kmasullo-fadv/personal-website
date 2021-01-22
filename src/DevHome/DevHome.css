@@ -1,8 +1,8 @@
 .homeDiv {
     display: flex;
     flex-direction: column;
-    color: rgb(18, 18, 18);
-    background-color: rgb(255, 249, 235);
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 19, 19);
     width: 100%;
     height: 100%;
     text-align: center;
@@ -11,15 +11,16 @@
     padding: 0;
 }
 
+.welcomeBannerDev {
+    background: url("../img/ink.gif");
+}
+
 .leftRightContainer {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    padding: 2%;
-    margin: 5% auto;
-    background: rgb(255, 248, 239);
-    box-shadow: 5px 5px 15px 2px rgb(172, 172, 172);
-    border-radius: 1%;
+    width: 80%;
+    padding: 1%;
+    margin: 30px auto;
 }
 
 .leftContainer,
@@ -31,19 +32,6 @@
     height: fit-content;
     margin-top: 3%;
     text-align: left;
-}
-
-.homeDiv h2 {
-    text-align: center;
-    font-size: 40px;
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-}
-
-.line {
-    border-bottom: 1px solid rgb(18, 18, 18);
-    padding-right: 1px;
 }
 
 .homeDiv p {
@@ -64,17 +52,14 @@
     margin-left: 10px;
 }
 
-.social a:link {color: rgb(19,19,19);}
-.social a:visited {color: rgb(19,19,19);}
-.social a:hover {color: rgb(0, 115, 203);}
+.social a:link {color: rgb(211, 211, 211);}
+.social a:visited {color: rgb(211, 211, 211);}
+.social a:hover {color: rgb(203, 196, 0);}
 .social a:active {color: rgb(0, 68, 150);}
 
 @media screen and (max-width: 1100px) {
     .homeDiv h2 {
         margin: auto;
-    }
-    .line {
-        margin: 0 auto 20px auto;
     }
     .leftRightContainer {
         flex-direction: column;
@@ -95,9 +80,6 @@
         opacity: .90;
         display: block;
     }
-    .line {
-        max-width: 250px;
-    }
 }
 
 @media screen and (max-width: 625px) {
@@ -116,5 +98,12 @@
         margin-top: 20px;
         opacity: .90;
         display: block;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .leftRightContainer {
+        width: auto;
+        border-radius: 0;
     }
 }

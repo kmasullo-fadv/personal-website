@@ -1,24 +1,20 @@
 import React, {Component} from 'react'
-import longBanner from '../img/longBanner.png'
-import tallBanner from '../img/tallBanner.png'
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Link} from 'react-router-dom'
-import "./MusHeader.css"
 
 export default class MusHome extends Component {
-
-
-
     render() {
         return (
-            <div className="musHeader">
-                <Link to="/"><img src={longBanner} alt="Kameron Masullo" className="longBanner" /></Link>
-                <Link to="/"><img src={tallBanner} alt="Kameron Masullo" className="tallBanner" /></Link>
+            <header>
+                <Link to="/" className="headerLink"><h1 className="headerH1 hover">Kameron Masullo</h1></Link>
                 <nav>
                     <Link to="/music">Home</Link>
                     <Link to="/music/listen">Listen</Link>
                     <Link to="/music/contact">Contact</Link>
+                    <Link to="/dev">Dev <FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></Link>
                 </nav>
-            </div>
+            </header>
         );
     };
 };

@@ -7,7 +7,7 @@
     color: rgb(19,19,19);
     background-color:rgb(255, 249, 235);
     margin-bottom: 5px;
-    padding: 50px 10%;
+    padding: 50px 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,7 +21,8 @@
 }
 
 .projectInfo {
-    width: 33%;
+    /* width: 33%; */
+    flex: 1;
     margin-right: 30px;
     padding: 2%;
     background: rgb(255, 252, 242);
@@ -46,10 +47,9 @@
 
 
 .projectImages {
-    display: flex;
-    flex-direction: column;
     margin: auto;
-    width: 66%;
+    /* width: 66%; */
+    flex: 2;
     box-shadow: 5px 5px 15px 1px rgb(145, 145, 145);
 }
 .projectImage {
@@ -100,9 +100,6 @@
     .projectImages {
         margin-top: 30px;
     }
-  }
-
-  @media screen and (max-width: 825px) {
     .line {
         margin: 0;
         min-width: 100%;
