@@ -25,7 +25,7 @@ export default class DevPortfolio extends Component {
                         <p>
                             Development Environment: React
                         </p>
-                        <a href="https://github.com/mloldacre/battleship-jmkbh" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
+                        <a href="https://github.com/kmasullo/km-audio-website" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
                     </div>
                     <div className="projectImages">
                         <img src={SA} alt="socratic-audio-screenshot" className="projectImage"/>
