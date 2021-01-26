@@ -18,7 +18,7 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
-    margin: 1% auto;
+    margin: auto;
 }
 
 .headerH1 {

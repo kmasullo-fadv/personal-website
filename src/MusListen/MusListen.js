@@ -36,7 +36,9 @@ export default class MusListen extends Component {
         return (
             <div className="playerContainer">
                 <div className="playerBanner">
-                    <img src={albumStore[this.state.currentAlbum].cover} alt={albumStore[this.state.currentAlbum].cover} className="playerBannerImg"></img>
+                    <div className="playerBannerImgDiv">
+                        <img src={albumStore[this.state.currentAlbum].cover} alt={albumStore[this.state.currentAlbum].cover} className="playerBannerImg"></img>
+                    </div>
                     <div className="playerBannerTitles">
                         <h2>{albumStore[this.state.currentAlbum].tracks[this.state.currentSong].title}</h2>
                         <h3 className="albumName">{this.state.currentAlbum}</h3>
