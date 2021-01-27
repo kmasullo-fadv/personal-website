@@ -53,8 +53,12 @@ nav a:link, #contactButton {
 
 
 nav a:hover, #contactButton:hover {
-    background: rgb(255, 183, 0);
-    color: rgb(40, 130, 179);
+    color: rgb(255, 183, 0);
+}
+nav a:focus, #contactButton:focus {
+    outline: auto;
+    outline-color: white;
+    color: rgb(255, 183, 0);
 }
 
 nav {
@@ -66,7 +70,7 @@ nav {
 }
 
 nav * {
-    width: 120px;
+    width: fit-content;
 }
 
 .welcomeBannerDiv {
@@ -95,8 +99,10 @@ nav * {
         flex-direction: column;
     }
     nav {
+        margin: auto;
         margin-top: 20px;
-        width: 100%;
+        width: 90%;
+        
     }
    
 }
