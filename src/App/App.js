@@ -17,7 +17,8 @@ import './App.css';
 
 export default class App extends Component {
   state = {
-    currentPath: null
+    currentPath: null,
+    contact: false
   }
 
   setCurrentPath = (path, historyFunction = null) => {
@@ -29,15 +30,28 @@ export default class App extends Component {
       : this.setState({currentPath: path})
   }
 
+  setContact = () => {
+    this.setState({contact: !this.state.contact});
+  }
+
+  contactX = (e) => {
+    if (e && e.target.id === 'devContact') {
+      this.setContact()
+    }
+  }
+
   render() {
+    window.onclick = this.contactX;
     const value = {
       setCurrentPath: this.setCurrentPath,
       currentPath: this.state.currentPath,
+      setContact: this.setContact
     }
     return (
       <Context.Provider value={value}>
         <div className="App">
           <Route component={DevHeader} path="/dev" />
+          {this.state.contact && <Route component={DevContact} path="/" />}
           <Route component={DevHome} exact path="/dev" />
           <Route component={LandingPage} exact path="/" />
           <Route component={DevPortfolio} exact path="/dev/portfolio"/>

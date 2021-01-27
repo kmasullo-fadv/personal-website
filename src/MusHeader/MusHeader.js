@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Link} from 'react-router-dom'
+import Context from '../Context';
+
 
 export default class MusHome extends Component {
+    static contextType = Context;
     render() {
         return (
             <header>
@@ -11,8 +12,8 @@ export default class MusHome extends Component {
                 <nav>
                     <Link to="/music">Home</Link>
                     <Link to="/music/listen">Listen</Link>
-                    <Link to="/music/contact">Contact</Link>
-                    <Link to="/dev">Dev <FontAwesomeIcon icon={ faExternalLinkAlt } className="small"/></Link>
+                    <button onClick={this.context.setContact} id="contactButton">Contact</button>
+                    <Link to="/dev">Dev</Link>
                 </nav>
             </header>
         );

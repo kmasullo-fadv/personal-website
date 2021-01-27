@@ -34,7 +34,7 @@
     color: white;
     overflow: auto;
 }
-.newsColumn button {
+.newsButton {
     min-height: 60px;
     max-height: 60px;
     text-align: left;
@@ -44,7 +44,7 @@
     margin-bottom: 5px;
 }
 
-.newsColumn button:hover,
+.newsButton:hover,
 .selected {
     background: rgb(232, 232, 232);
     color: rgb(0, 0, 0);

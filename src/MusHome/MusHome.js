@@ -27,7 +27,7 @@ export default class MusHome extends Component {
                     <div className="newsColumn">
                         <h3 className="newsH3">News</h3>
                         {news.articles.map((article, i) => {
-                            return <button id={i} key={`${article.title}${i}`} onClick={this.handleArticle} className={i === this.state.currArticle ? 'selected' : 'black'}>{article.title}</button>
+                            return <button id={i} key={`${article.title}${i}`} onClick={this.handleArticle} className={`${i === this.state.currArticle ? 'selected' : 'black'} newsButton`}>{article.title}</button>
                         })}
                     </div>
                     <div className="articleBox">

@@ -27,7 +27,7 @@ export default class MusListen extends Component {
     songSelector = (title, i) => {
             return(
                 <div className="songDiv" key={title}>
-                    <button id={i} onClick={this.handleClick}>{title}</button>
+                    <button id={i} onClick={this.handleClick} className="songButton">{title}</button>
                 </div>
             )
     }
