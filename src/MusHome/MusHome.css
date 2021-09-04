@@ -60,7 +60,7 @@
     flex-direction: column;
     flex: 2;
     overflow: auto;
-    padding: 5%;
+    padding: 2%;
     background: rgb(232, 232, 232);
     height: fit-content;
 }

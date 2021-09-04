@@ -9,7 +9,7 @@ export default class DevHeader extends Component {
     render() {
         return (
         <header>
-            <Link to="/" className="headerLink"><h1 className="headerH1 hover">Kameron Masullo</h1></Link>
+            <Link to="/" className="headerLink navbar-brand"><h1 className="headerH1 hover">Kameron Masullo</h1></Link>
             <nav>
                 <Link to="/dev">Home</Link>
                 <Link to="/dev/portfolio">Portfolio</Link>
