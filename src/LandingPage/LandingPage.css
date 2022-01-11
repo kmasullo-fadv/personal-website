@@ -29,12 +29,12 @@
     color: antiquewhite;
 }
 .musicPath:hover {
-    background: rgb(255, 248, 59);
+    background: rgb(255, 183, 0);
     color: rgb(32, 105, 145);
 }
 .musicPath:active {
-    background: rgb(245, 183, 25);
-    color: rgb(57, 164, 196);
+    background: rgb(216, 155, 0);
+    color: rgb(65, 186, 223);
 }
 
 .webDevPath {

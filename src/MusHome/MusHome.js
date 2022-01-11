@@ -17,8 +17,12 @@ export default class MusHome extends Component {
     render() {
         return (
             <div className="musHome">
-                <div className="welcomeBanner welcomeBannerMusic">
-                    <div className="welcomeBannerDiv">
+                <div className="welcomeBanner">
+                    <video className="portfolioVid" autoPlay muted loop>
+                        <source src="https://www.dropbox.com/s/046qc99tx0eutjf/mPortfolioVid.mp4?raw=1" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div className="headerText">
                         <h2 className="px65">Welcome</h2>
                         <h2 className="px50">I am a musician, songwriter and session guitarist</h2>
                     </div>
