@@ -10,7 +10,7 @@ export default class MusHome extends Component {
 
     handleArticle = (e) => {
         e.preventDefault();
-        this.setState({currArticle: parseInt(e.target.id)})
+        this.setState({ currArticle: parseInt(e.target.id) })
 
     }
 
@@ -24,7 +24,7 @@ export default class MusHome extends Component {
                     </video>
                     <div className="headerText">
                         <h2 className="px65">Welcome</h2>
-                        <h2 className="px50">I am a musician, songwriter and session guitarist</h2>
+                        <h2 className="px50">I am a musician, songwriter, and session guitarist</h2>
                     </div>
                 </div>
                 <div className="musHomeContent center">

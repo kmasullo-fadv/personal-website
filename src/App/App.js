@@ -23,15 +23,14 @@ export default class App extends Component {
 
   setCurrentPath = (path, historyFunction = null) => {
     historyFunction
-      ? this.setState(
-        {currentPath: path},
-        () => historyFunction()
-      )
-      : this.setState({currentPath: path})
+      ? this.setState({ currentPath: path },
+          () => historyFunction()
+        )
+      : this.setState({ currentPath: path })
   }
 
   setContact = () => {
-    this.setState({contact: !this.state.contact});
+    this.setState({ contact: !this.state.contact });
   }
 
   contactX = (e) => {
@@ -57,8 +56,6 @@ export default class App extends Component {
           <Route component={DevPortfolio} exact path="/dev/portfolio"/>
           <Route component={DevPortfolio} exact path="/dev"/>
           <Route component={MusicPortfolio} exact path="/music/portfolio" />
-          <Route component={DevContact} exact path="/dev/contact" />
-          {/* <Route component={NotFound} path="/:AnythingWrong" /> */}
           <Route component={MusHeader} path="/music" />
           <Route component={MusHome} exact path="/music" />
           <Route component={MusListen} exact path="/music/listen" />

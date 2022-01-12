@@ -12,7 +12,7 @@ export default class MusListen extends Component {
     handleClick = (e) => {
         e.preventDefault();
         const id = parseInt(e.target.id);
-        this.setState({currentSong: id, autoPlay: true})
+        this.setState({ currentSong: id, autoPlay: true })
     }
 
     album = (title) => {

@@ -16,7 +16,7 @@ form {
     flex-direction: column;
     margin: auto;
     color: rgb(19, 19, 19);
-    padding: 2%;
+    padding: 1%;
     max-width: 350px;
     min-width: 320px;
     background: rgb(255, 252, 242);
@@ -27,14 +27,15 @@ form {
 #contactCloseDiv {
     display: flex;
     justify-content: space-between;
+    height: fit-content;
 }
 
 #contactClose {
     font-size: 40px;
-    padding: 0;
+    padding: 0 0 4px 0;
+    vertical-align: middle;
     font-weight: bold;
     width: fit-content;
-    height: min-content;
     background: none;
     border: none;
     outline: none;
@@ -45,8 +46,10 @@ form {
     color: rgb(255, 183, 0);
 }
 
-#contactH2 {
+#contactH2, #contactClose {
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 .devContact input,
@@ -68,6 +71,7 @@ form {
 }
 
 #contactSubmit {
+    margin-top: 10px;
     height: 35px;
     font-weight: bold;
     font-size: 20px;
