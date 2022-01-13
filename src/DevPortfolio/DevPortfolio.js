@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import SA from '../img/SA.gif'
-import SB from '../img/SB.gif'
-import CT from '../img/CT.gif'
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,7 +25,7 @@ export default class DevPortfolio extends Component {
                         <a href="https://github.com/kmasullo/km-audio-website" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
                     </div>
                     <div className="projectImages">
-                        <img src={SA} alt="socratic-audio-screenshot" className="projectImage"/>
+                        <img src="https://www.dropbox.com/s/efutm38pjblw2yu/SA.gif?raw=1" alt="socratic-audio-screenshot" className="projectImage"/>
                     </div>
                 </div>
                 <div className="projectDiv">
@@ -63,7 +60,7 @@ export default class DevPortfolio extends Component {
                         <a href="https://github.com/mloldacre/battleship-jmkbh" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
                     </div>
                     <div className="projectImages">
-                        <img src={SB} alt="space-battleship-screenshot" className="projectImage"/>
+                        <img src="https://www.dropbox.com/s/s6xn7dtjxkpjaad/SB.gif?raw=1" alt="space-battleship-screenshot" className="projectImage"/>
                     </div>
                 </div>
                 <div className="projectDiv">
@@ -86,7 +83,7 @@ export default class DevPortfolio extends Component {
                         <a href="https://github.com/kmasullo/chordtester-frontend" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
                     </div>
                     <div className="projectImages">
-                        <img src={CT} alt="chordtester-screenshot" className="projectImage"/>
+                        <img src="https://www.dropbox.com/s/ivf8mxkr5956lmh/CT.gif?raw=1" alt="chordtester-screenshot" className="projectImage"/>
                     </div>
                 </div>
             </div>

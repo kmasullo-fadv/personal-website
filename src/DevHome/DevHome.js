@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import DevPortfolio from '../DevPortfolio/DevPortfolio';
 import "./DevHome.css"
 
 export default class DevHome extends Component {
 
     render() {
-        return (
-            <>
+        return (<>
             <div className="homeDiv center">
                 <div className="welcomeBanner">
                     <video className="portfolioVid" autoPlay muted loop>
@@ -30,8 +30,8 @@ export default class DevHome extends Component {
                     </div>
                 </div>
             </div>
-            </>
-        )
+            <DevPortfolio />
+        </>)
     }
 
     renderDescription = () => {

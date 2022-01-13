@@ -1,8 +1,6 @@
-import sdCover from '../img/sdCover.jpg'
-
 const albumStore = {
     Sundowning: {
-        cover: sdCover,
+        cover: "https://www.dropbox.com/s/bfnp814k1b4z5vh/sdCover.jpg?raw=1",
         tracks: [
             {title: "1. Mouth Shut", file: "mouth-shut.mp3"},
             {title: "2. Algor Mortis", file: "algor-mortis.mp3"},
