@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import Context from '../Context';
+import Context from '../../Context';
 
 
 export default class DevHeader extends Component {

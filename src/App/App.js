@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import {Route} from 'react-router-dom';
-import DevHeader from '../DevHeader/DevHeader';
-import DevHome from '../DevHome/DevHome.js'
+import DevHeader from '../dev/DevHeader/DevHeader';
+import DevHome from '../dev/DevHome/DevHome.js'
 import LandingPage from '../LandingPage/LandingPage.js';
-import DevPortfolio from "../DevPortfolio/DevPortfolio.js";
-import MusHeader from "../MusHeader/MusHeader"
-import MusHome from "../MusHome/MusHome"
-import MusicPortfolio from "../MusicPortfolio/MusicPortfolio.js";
+import DevPortfolio from "../dev/DevPortfolio/DevPortfolio.js";
+import MusHeader from "../music/MusHeader/MusHeader"
+import MusHome from "../music/MusHome/MusHome"
+import MusicPortfolio from "../music/MusicPortfolio/MusicPortfolio.js";
 import Store from "../Store/Store.js";
-import MusContact from "../MusContact/MusContact.js"
+import MusContact from "../music/MusContact/MusContact.js"
 import DevContact from "../Contact/Contact";
 import Context from '../Context'
-import MusicPlayer from '../musicplayer/MusicPlayer';
 import './App.css';
 
 export default class App extends Component {
@@ -56,7 +55,6 @@ export default class App extends Component {
           <Route component={MusicPortfolio} exact path="/music/portfolio" />
           <Route component={MusHeader} path="/music" />
           <Route component={MusHome} exact path="/music" />
-          <Route component={MusicPlayer} exact path="/music/listen" />
           <Route component={DevContact} exact path="/music/contact" />
           <Route component={Store} exact path="/music/store" />
           <Route component={MusContact} exact path="/music/muscontact" />

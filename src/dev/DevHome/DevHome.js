@@ -3,22 +3,14 @@ import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DevPortfolio from '../DevPortfolio/DevPortfolio';
 import "./DevHome.css"
+import WelcomeBanner from '../../common/WelcomeBanner';
 
 export default class DevHome extends Component {
 
     render() {
         return (<>
             <div className="homeDiv center">
-                <div className="welcomeBanner">
-                    <video className="portfolioVid" autoPlay muted loop>
-                        <source src="https://www.dropbox.com/s/eyyaw5nn9h84izu/dPortfolioVid.mp4?raw=1" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <div className="headerText">
-                        <h2 className="px65">Welcome</h2>
-                        <h2 className="px50">I build software applications</h2>
-                    </div>
-                </div>
+                <WelcomeBanner src="https://www.dropbox.com/s/eyyaw5nn9h84izu/dPortfolioVid.mp4?raw=1" message="I build software applications"/>
                 <div className="leftRightContainer">
                     <h2>About Me:</h2>
                     <div className="rightContainer">
