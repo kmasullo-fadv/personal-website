@@ -9,7 +9,7 @@ import MusHome from "../music/MusHome/MusHome"
 import MusicPortfolio from "../music/MusicPortfolio/MusicPortfolio.js";
 import Store from "../Store/Store.js";
 import MusContact from "../music/MusContact/MusContact.js"
-import DevContact from "../Contact/Contact";
+import DevContact from "../common/Contact/Contact";
 import Context from '../Context'
 import './App.css';
 

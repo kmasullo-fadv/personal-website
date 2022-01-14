@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import MusicPlayer from '../musicplayer/MusicPlayer'
-import {news} from '../../NEWSSTORE'
+import {news} from '../NEWSSTORE'
 import WelcomeBanner from '../../common/WelcomeBanner'
 import "./MusHome.css"
 
