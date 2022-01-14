@@ -6,12 +6,12 @@ import LandingPage from '../LandingPage/LandingPage.js';
 import DevPortfolio from "../DevPortfolio/DevPortfolio.js";
 import MusHeader from "../MusHeader/MusHeader"
 import MusHome from "../MusHome/MusHome"
-import MusListen from "../MusListen/MusListen.js"
 import MusicPortfolio from "../MusicPortfolio/MusicPortfolio.js";
 import Store from "../Store/Store.js";
 import MusContact from "../MusContact/MusContact.js"
 import DevContact from "../Contact/Contact";
 import Context from '../Context'
+import MusicPlayer from '../musicplayer/MusicPlayer';
 import './App.css';
 
 export default class App extends Component {
@@ -56,7 +56,7 @@ export default class App extends Component {
           <Route component={MusicPortfolio} exact path="/music/portfolio" />
           <Route component={MusHeader} path="/music" />
           <Route component={MusHome} exact path="/music" />
-          <Route component={MusListen} exact path="/music/listen" />
+          <Route component={MusicPlayer} exact path="/music/listen" />
           <Route component={DevContact} exact path="/music/contact" />
           <Route component={Store} exact path="/music/store" />
           <Route component={MusContact} exact path="/music/muscontact" />

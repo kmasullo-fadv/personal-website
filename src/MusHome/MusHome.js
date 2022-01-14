@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import MusicPlayer from '../musicplayer/MusicPlayer'
 import {news} from '../NEWSSTORE'
 import "./MusHome.css"
 
@@ -38,6 +39,7 @@ export default class MusHome extends Component {
                         {news.articles[this.state.currArticle].content}
                     </div>
                 </div>
+                <MusicPlayer />
             </div>
         );
     };
