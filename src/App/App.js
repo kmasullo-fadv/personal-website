@@ -1,23 +1,22 @@
 import React, { Component } from 'react';
 import {Route} from 'react-router-dom';
+import LandingPage from '../landingpage/LandingPage.js';
 import DevHeader from '../dev/DevHeader/DevHeader';
-import DevHome from '../dev/DevHome/DevHome.js'
-import LandingPage from '../LandingPage/LandingPage.js';
-import DevPortfolio from "../dev/DevPortfolio/DevPortfolio.js";
-import MusHeader from "../music/MusHeader/MusHeader"
-import MusHome from "../music/MusHome/MusHome"
-import MusicPortfolio from "../music/MusicPortfolio/MusicPortfolio.js";
-import Store from "../Store/Store.js";
-import MusContact from "../music/MusContact/MusContact.js"
-import DevContact from "../common/Contact/Contact";
-import Context from '../Context'
+import DevHome from '../dev/DevHome/DevHome.js';
+import MusHeader from "../music/MusHeader/MusHeader";
+import MusHome from "../music/MusHome/MusHome";
+import Contact from '../common/Contact/Contact.js';
+import Context from '../Context';
 import './App.css';
 
 export default class App extends Component {
   state = {
     currentPath: null,
-    contact: false
+    show: false
   }
+
+  handleShow = () => this.setState({ show: true });
+  handleClose = () => this.setState({ show: false });
 
   setCurrentPath = (path, historyFunction = null) => {
     historyFunction
@@ -27,37 +26,23 @@ export default class App extends Component {
       : this.setState({ currentPath: path })
   }
 
-  setContact = () => {
-    this.setState({ contact: !this.state.contact });
-  }
-
-  contactX = (e) => {
-    if (e && e.target.id === 'devContact') {
-      this.setContact()
-    }
-  }
-
   render() {
-    window.onclick = this.contactX;
     const value = {
       setCurrentPath: this.setCurrentPath,
       currentPath: this.state.currentPath,
-      setContact: this.setContact
+      show: this.state.show,
+      handleShow: this.handleShow,
+      handleClose: this.handleClose,
     }
     return (
       <Context.Provider value={value}>
         <div className="App">
-          <Route component={DevHeader} path="/dev" />
-          {this.state.contact && <Route component={DevContact} path="/" />}
-          <Route component={DevHome} exact path="/dev" />
           <Route component={LandingPage} exact path="/" />
-          <Route component={DevPortfolio} exact path="/dev/portfolio"/>
-          <Route component={MusicPortfolio} exact path="/music/portfolio" />
+          <Route component={DevHeader} path="/dev" />
+          <Route component={DevHome} exact path="/dev" />
           <Route component={MusHeader} path="/music" />
           <Route component={MusHome} exact path="/music" />
-          <Route component={DevContact} exact path="/music/contact" />
-          <Route component={Store} exact path="/music/store" />
-          <Route component={MusContact} exact path="/music/muscontact" />
+          <Contact show={this.state.show} handleClose={this.handleClose}/>
         </div>
       </Context.Provider>
     );

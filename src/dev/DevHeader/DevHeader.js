@@ -8,16 +8,13 @@ export default class DevHeader extends Component {
 
     render() {
         return (
-        <header>
-            <Link to="/" className="headerLink"><h1 className="headerH1 hover">Kameron Masullo</h1></Link>
-            <nav>
-                <Link to="/dev">Home</Link>
-                <Link to="/dev/portfolio">Portfolio</Link>
-                {/* <Link to="/dev/contact">Contact</Link> */}
-                <button onClick={this.context.setContact} id="contactButton">Contact</button>
-                <Link to="/music">Music</Link>
-            </nav>
-        </header>
+            <header>
+                <Link to="/" className="headerLink"><h1 className="headerH1 hover">Kameron Masullo</h1></Link>
+                <nav>
+                    <button onClick={this.context.handleShow} id="contactButton">Contact</button>
+                    <Link to="/music">Music</Link>
+                </nav>
+            </header>
         );
     };
 };
