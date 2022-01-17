@@ -18,7 +18,6 @@ export default class MusicHome extends Component {
     handleArticle = (e) => {
         e.preventDefault();
         this.setState({ currArticle: parseInt(e.target.id) })
-
     }
 
     render() {

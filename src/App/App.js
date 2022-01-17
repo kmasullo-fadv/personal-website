@@ -3,7 +3,7 @@ import {Route} from 'react-router-dom';
 import LandingPage from '../landingpage/LandingPage.js';
 import DevHome from '../dev/DevHome/DevHome.js';
 import MusicHome from "../music/MusicHome/MusicHome";
-import Contact from '../common/Contact/Contact.js';
+import Contact from '../common/Contact.js';
 import Context from '../Context';
 import './App.css';
 
