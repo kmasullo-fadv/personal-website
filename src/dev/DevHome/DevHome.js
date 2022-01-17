@@ -4,11 +4,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DevPortfolio from '../DevPortfolio/DevPortfolio';
 import "./DevHome.css"
 import WelcomeBanner from '../../common/WelcomeBanner';
+import Header from '../../common/Header';
+import Context from '../../Context';
+
+const DEV = "dev"
 
 export default class DevHome extends Component {
+    static contextType = Context;
 
     render() {
         return (<>
+            <Header env={DEV} handleShow={this.context.handleShow} />
             <div className="homeDiv center">
                 <WelcomeBanner src="https://www.dropbox.com/s/eyyaw5nn9h84izu/dPortfolioVid.mp4?raw=1" message="I build software applications"/>
                 <div className="leftRightContainer">

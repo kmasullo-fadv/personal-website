@@ -2,12 +2,18 @@ import React, {Component} from 'react'
 import MusicPlayer from '../musicplayer/MusicPlayer'
 import {news} from '../NEWSSTORE'
 import WelcomeBanner from '../../common/WelcomeBanner'
-import "./MusHome.css"
+import "./MusicHome.css"
+import Header from '../../common/Header'
+import Context from '../../Context'
 
-export default class MusHome extends Component {
+const MUSIC = "music";
+
+export default class MusicHome extends Component {
     state = {
         currArticle: 0
     }
+
+    static contextType = Context;
 
     handleArticle = (e) => {
         e.preventDefault();
@@ -16,7 +22,8 @@ export default class MusHome extends Component {
     }
 
     render() {
-        return (
+        return (<>
+            <Header env={MUSIC} handleShow={this.context.handleShow} />
             <div className="musHome">
                 <WelcomeBanner
                     src="https://www.dropbox.com/s/046qc99tx0eutjf/mPortfolioVid.mp4?raw=1"
@@ -34,6 +41,7 @@ export default class MusHome extends Component {
                 </div>
                 <MusicPlayer />
             </div>
+            </>
         );
     };
 };

@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import {Route} from 'react-router-dom';
 import LandingPage from '../landingpage/LandingPage.js';
-import DevHeader from '../dev/DevHeader/DevHeader';
 import DevHome from '../dev/DevHome/DevHome.js';
-import MusHeader from "../music/MusHeader/MusHeader";
-import MusHome from "../music/MusHome/MusHome";
+import MusicHome from "../music/MusicHome/MusicHome";
 import Contact from '../common/Contact/Contact.js';
 import Context from '../Context';
 import './App.css';
@@ -38,10 +36,8 @@ export default class App extends Component {
       <Context.Provider value={value}>
         <div className="App">
           <Route component={LandingPage} exact path="/" />
-          <Route component={DevHeader} path="/dev" />
           <Route component={DevHome} exact path="/dev" />
-          <Route component={MusHeader} path="/music" />
-          <Route component={MusHome} exact path="/music" />
+          <Route component={MusicHome} exact path="/music" />
           <Contact show={this.state.show} handleClose={this.handleClose}/>
         </div>
       </Context.Provider>

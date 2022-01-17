@@ -6,7 +6,7 @@ const MusicPlayer = () => {
             <div className="playerContainer">
                 <iframe
                     title="sundowning-album-bandcamp"
-                    style={{border: 0, width: "600px", height: "1000px"}}
+                    style={{ border: 0, width: "600px", height: "1000px" }}
                     src="https://bandcamp.com/EmbeddedPlayer/album=133674501/size=large/bgcol=333333/linkcol=e99708/transparent=true/"
                     seamless
                 >
