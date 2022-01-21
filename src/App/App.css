@@ -1,16 +1,9 @@
 .App {
     color: rgb(244, 244, 244);
-    min-height: 100%;
-    min-width: 100%;
-    margin: 0;
 }
 
 .App a, #contactButton {
     color: rgb(244, 244, 244);
-}
-
-a, button {
-    cursor: pointer;
 }
 
 header {
@@ -49,7 +42,7 @@ nav a:link, #contactButton {
     text-decoration: none;
     letter-spacing: 4px;
     font-size: 20px;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 
@@ -57,7 +50,7 @@ nav a:hover, #contactButton:hover {
     color: rgb(255, 183, 0);
 }
 nav a:focus, #contactButton:focus {
-    outline: auto;
+    outline: none;
     outline-color: white;
     color: rgb(255, 183, 0);
 }

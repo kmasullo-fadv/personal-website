@@ -51,10 +51,10 @@
     margin-left: 10px;
 }
 
-.social a:link {color: rgb(211, 211, 211);}
+.social a:link    {color: rgb(211, 211, 211);}
 .social a:visited {color: rgb(211, 211, 211);}
-.social a:hover {color: rgb(255, 183, 0);}
-.social a:active {color: rgb(0, 68, 150);}
+.social a:hover   {color: rgb(255, 183, 0);}
+.social a:active  {color: rgb(0, 68, 150);}
 
 @media screen and (max-width: 1100px) {
     .leftRightContainer {

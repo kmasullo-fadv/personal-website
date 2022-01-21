@@ -30,15 +30,22 @@ export default class MusicHome extends Component {
                 <div className="musHomeContent center">
                     <div className="newsColumn">
                         <h3 className="newsH3">News</h3>
-                        {news.articles.map((article, i) => {
-                            return <button id={i} key={`${article.title}${i}`} onClick={this.handleArticle} className={`${i === this.state.currArticle ? 'selected' : 'black'} newsButton`}>{article.title}</button>
-                        })}
+                        {
+                            news.articles.map((article, i) => 
+                                <button id={i} key={`${article.title}${i}`} onClick={this.handleArticle} className={`${i === this.state.currArticle ? 'selected' : 'black'} newsButton`} >
+                                    {article.title}
+                                </button>
+                            )
+                        }
                     </div>
                     <div className="articleBox">
                         {news.articles[this.state.currArticle].content}
                     </div>
                 </div>
-                <MusicPlayer />
+                <div className='container'>
+                    <h2>Listen</h2>
+                    <MusicPlayer />
+                </div>
             </div>
             </>
         );
