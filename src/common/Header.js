@@ -15,8 +15,8 @@ const MUSIC_LISTEN_ITEMS = [
 ]
 
 const DEV_SOCIAL_ITEMS = [
-    { label: "LinkedIn", icon: faLinkedin, href: "https://linkedin.com/in/kameron-masullo" },
-    { label: "GitHub",   icon: faGithub,   href: "https://github.com/kmasullo" }
+    { label: "LinkedIn", isFontAwesome: true, icon: faLinkedin, href: "https://linkedin.com/in/kameron-masullo" },
+    { label: "GitHub",   isFontAwesome: true, icon: faGithub,   href: "https://github.com/kmasullo" }
 ]
 
 const Header = (props) => {
@@ -24,7 +24,7 @@ const Header = (props) => {
             <Navbar variant="dark" bg="rgb(19, 19, 19)" expand="lg">
                 <Container fluid>
                     <Navbar.Brand>
-                        <Link to="/" className='hoverOrange' style={{ fontFamily: "smythe", textDecoration: "none", letterSpacing: "4px", fontSize: "20px" }}>
+                        <Link to="/" className='hoverOrange' style={{ fontFamily: "buda", textDecoration: "none", letterSpacing: "4px", fontSize: "20px" }}>
                             <h1>Kameron Masullo</h1>
                         </Link>
                     </Navbar.Brand>
