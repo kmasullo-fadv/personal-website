@@ -11,7 +11,7 @@ const MUSIC = "music"
 const MUSIC_LISTEN_ITEMS = [
     { label: "Spotify",  isFontAwesome: true,  icon: faSpotify,   href: "https://open.spotify.com/artist/5G946pHaGg1bWL8UjiZPdB?si=D0iBu9EsTSO5Vr8t-2MYfQ" },
     { label: "Bandcamp", isFontAwesome: true,  icon: faBandcamp,  href: "https://kameronmasullo.bandcamp.com/" },
-    { label: "Tidal",    isFontAwesome: false, icon: <img src={tidal} alt='tidal-logo' style={{ color: 'white', width: '14px' }} />,  href: "https://tidal.com/browse/artist/21600507" }
+    { label: "Tidal",    isFontAwesome: false, icon: <img src={ tidal } alt='tidal-logo' style={{ color: 'white', width: '14px' }} />,  href: "https://tidal.com/browse/artist/21600507" }
 ]
 
 const DEV_SOCIAL_ITEMS = [
@@ -24,7 +24,7 @@ const Header = (props) => {
             <Navbar variant="dark" bg="rgb(19, 19, 19)" expand="lg">
                 <Container fluid>
                     <Navbar.Brand>
-                        <Link to="/" className='hoverOrange' style={{ fontFamily: "buda", textDecoration: "none", letterSpacing: "4px", fontSize: "20px" }}>
+                        <Link to="/" className='hoverOrange' style={{ fontFamily: "Montserrat", textDecoration: "none", letterSpacing: "4px", fontSize: "20px" }}>
                             <h1>Kameron Masullo</h1>
                         </Link>
                     </Navbar.Brand>
