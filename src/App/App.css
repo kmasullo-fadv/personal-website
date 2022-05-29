@@ -1,5 +1,6 @@
 .App {
     color: rgb(235, 235, 235);
+    min-height: 100vh !important;
 }
 
 .App a, .contactButton {

@@ -34,7 +34,7 @@ export default class App extends Component {
     }
     return (
       <Context.Provider value={value}>
-        <div className="App">
+        <div className="App h-100">
           <Route component={LandingPage} exact path="/" />
           <Route component={DevHome} exact path="/dev" />
           <Route component={MusicHome} exact path="/music" />
