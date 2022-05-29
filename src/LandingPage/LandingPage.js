@@ -15,14 +15,14 @@ export default class LandingPage extends Component {
         this.context.setCurrentPath('landingPage')
     }
     
-    musicClick = (e) => {
+    navigateToMusic = (e) => {
         e.preventDefault();
         this.context.setCurrentPath(
             'musicPath',
             () => this.props.history.push('/music'))
     }
 
-    webDevClick = (e) => {
+    navigateToDev = (e) => {
         e.preventDefault();
         this.context.setCurrentPath(
             'webDevPath',
@@ -30,24 +30,25 @@ export default class LandingPage extends Component {
     }
 
     render() {
-        return(
+        return (
             <div className='col-12 bg-light' style={{ minHeight: '100vh' }}>
-                    <img className='w-100' src={ nameLogo } alt='Kameron Masullo' />
-                
-            <div className="col d-flex justify-content-center align-items-center">
-                <div className="card bg-dark col-lg-4 col-md-6 col-sm-8">
-                    <div className='card-header'>
-                        <div className='col text-center'>
-                            <h2 className=''>Welcome</h2>
-                            <h5>I am a Musician and Software Engineer</h5>
+                <div className='col-12 d-flex justify-content-center'>
+                    <img className='col-lg-8 col-md-12' src={ nameLogo } alt='Kameron Masullo' style={{ maxWidth: '100vw' }} />
+                </div>
+                <div className="col-12 d-flex justify-content-center align-items-center h-100">
+                    <div className="card bg-dark col-lg-4 col-md-6 col-sm-8">
+                        <div className='card-header'>
+                            <div className='col text-center'>
+                                <h2 className=''>Welcome</h2>
+                                <h5>I am a Musician and Software Engineer</h5>
+                            </div>
+                        </div>
+                        <div className='card-body d-flex justify-content-evenly align-items-center'>
+                            <button className="col-3 btn btn-light" onClick={this.navigateToMusic}>Music</button>
+                            <button className="col-3 btn btn-light" onClick={this.navigateToDev}>Dev</button>
                         </div>
                     </div>
-                    <div className='card-body d-flex justify-content-evenly align-items-center'>
-                        <button className="col-3" onClick={this.musicClick}>Music</button>
-                        <button className="col-3" onClick={this.webDevClick}>Dev</button>
-                    </div>
                 </div>
-            </div>
             </div>
         )
     }
