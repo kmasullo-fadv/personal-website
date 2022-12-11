@@ -22,7 +22,7 @@ export default class DevHome extends Component {
                     <div className="rightContainer">
                         {this.renderDescription()}
                         <div className="social">
-                            <a href="https://github.com/kmasullo" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
+                            <a href="https://github.com/kmasullo-fadv" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
                             <a href="https://www.linkedin.com/in/kameron-masullo/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faLinkedin } size="2x"/></a>
                         </div>
                     </div>

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {Route} from 'react-router-dom';
-import LandingPage from '../landingpage/LandingPage.js';
-import DevHome from '../dev/DevHome/DevHome.js';
+import LandingPage from '../LandingPage/LandingPage';
+import DevHome from '../dev/DevHome/DevHome';
 import MusicHome from "../music/MusicHome/MusicHome";
-import Contact from '../common/Contact.js';
+import Contact from '../common/Contact';
 import Context from '../Context';
 import './App.css';
 

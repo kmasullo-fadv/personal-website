@@ -16,7 +16,7 @@ const MUSIC_LISTEN_ITEMS = [
 
 const DEV_SOCIAL_ITEMS = [
     { label: "LinkedIn", isFontAwesome: true, icon: faLinkedin, href: "https://linkedin.com/in/kameron-masullo" },
-    { label: "GitHub",   isFontAwesome: true, icon: faGithub,   href: "https://github.com/kmasullo" }
+    { label: "GitHub",   isFontAwesome: true, icon: faGithub,   href: "https://github.com/kmasullo-fadv" }
 ]
 
 const Header = (props) => {

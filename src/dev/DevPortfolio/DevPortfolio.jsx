@@ -22,7 +22,7 @@ export default class DevPortfolio extends Component {
                         <p>
                             Development Environment: React
                         </p>
-                        <a href="https://github.com/kmasullo/km-audio-website" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
+                        <a href="https://github.com/kmasullo-fadv/km-audio-website" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
                     </div>
                     <div className="projectImages">
                         <img src="https://www.dropbox.com/s/efutm38pjblw2yu/SA.gif?raw=1" alt="socratic-audio-screenshot" className="projectImage"/>
@@ -80,7 +80,7 @@ export default class DevPortfolio extends Component {
                         <p>
                             Development Environment: Tone.js, React, Node, Express, PostgreSQL, Knex.
                         </p>
-                        <a href="https://github.com/kmasullo/chordtester-frontend" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
+                        <a href="https://github.com/kmasullo-fadv/chordtester-frontend" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithubSquare } size="2x"/></a>
                     </div>
                     <div className="projectImages">
                         <img src="https://www.dropbox.com/s/ivf8mxkr5956lmh/CT.gif?raw=1" alt="chordtester-screenshot" className="projectImage"/>
